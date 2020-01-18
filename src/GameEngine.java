@@ -1,17 +1,17 @@
 public class GameEngine {
 
-  public void simulateBattle(Fighter first, Fighter second) {
+  public void simulateBattle(LuckyFighter first, LuckyFighter second) {
     while (!first.isDead() && !second.isDead()) {
       int firstScore = first.calculateAttackScore();
       int secondScore = second.calculateAttackScore();
       if (firstScore > secondScore) {
-        System.out.println(first.getName() + "hits " + second.getName() + ", stats are:");
+        System.out.println(first.getName() + " hits " + second.getName() + ", stats are:");
         System.out.println(first.getStats());
         System.out.println(second.getStats());
         int damage = second.calculateDamage();
         second.takeDamage(damage);
       } else if (secondScore > firstScore) {
-        System.out.println(second.getName() + "hits " + first.getName() + ", stats are:");
+        System.out.println(second.getName() + " hits " + first.getName() + ", stats are:");
         System.out.println(first.getStats());
         System.out.println(second.getStats());
         int damage = first.calculateDamage();
