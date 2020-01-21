@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24d7fad3-a6ce-4c11-b505-c0f962d0a646" name="Default Changelist" comment="" />
+    <list default="true" id="6ede18e4-f75f-4a35-ad54-c13960d51cbe" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +11,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -19,12 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1Wa9Nxzx4cuUg9MATqCoaN0sWSP" />
+  <component name="ProjectId" id="1Whxm6uSWEiKtu52m1MBBLEVWkP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Facets" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
@@ -40,16 +36,16 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Music-Collection" />
+    <configuration name="DrawingEngineDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DrawingEngineDemo" />
+      <module name="IrresponsibleRectangle" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DrawingEngineDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -58,11 +54,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="24d7fad3-a6ce-4c11-b505-c0f962d0a646" name="Default Changelist" comment="" />
-      <created>1579376802159</created>
+      <changelist id="6ede18e4-f75f-4a35-ad54-c13960d51cbe" name="Default Changelist" comment="" />
+      <created>1579615783797</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579376802159</updated>
+      <updated>1579615783797</updated>
     </task>
     <servers />
   </component>
@@ -71,9 +67,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
