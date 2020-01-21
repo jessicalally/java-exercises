@@ -71,34 +71,34 @@ public class LuckyFighter {
     }
   }
 
-    // Return the number of damage points to be inflicted on opponent
-    public int calculateDamage () {
-      if (strategy == "aggressive" && luck > 0) {
-        System.out.println(name + " goes for an aggressive hit!");
-        if (testLuck()) {
-          System.out.println("The hit is aggressive!");
-          return DAMAGE_VAL * 2;
-        } else {
-          System.out.println("The hit flounders!");
-          return DAMAGE_VAL / 2;
-        }
+  // Return the number of damage points to be inflicted on opponent
+  public int calculateDamage () {
+    if (strategy == "aggressive" && luck > 0) {
+      System.out.println(name + " goes for an aggressive hit!");
+      if (testLuck()) {
+        System.out.println("The hit is aggressive!");
+        return DAMAGE_VAL * 2;
       } else {
-        return DAMAGE_VAL;
+        System.out.println("The hit flounders!");
+        return DAMAGE_VAL / 2;
       }
+    } else {
+      return DAMAGE_VAL;
     }
-
-    // Calculate an attack score for the fighter using the procedure described above
-    public int calculateAttackScore () {
-      Random random = new Random();
-      int dice1 = random.nextInt(6) + 1;
-      int dice2 = random.nextInt(6) + 1;
-      int attackScore = dice1 + dice2 + skill;
-      return attackScore;
-    }
-
-    // Determine whether fighter is still alive
-    public boolean isDead () {
-      return stamina == 0;
-    }
-
   }
+
+  // Calculate an attack score for the fighter using the procedure described above
+  public int calculateAttackScore () {
+    Random random = new Random();
+    int dice1 = random.nextInt(6) + 1;
+    int dice2 = random.nextInt(6) + 1;
+    int attackScore = dice1 + dice2 + skill;
+    return attackScore;
+  }
+
+  // Determine whether fighter is still alive
+  public boolean isDead () {
+    return stamina == 0;
+  }
+
+}
