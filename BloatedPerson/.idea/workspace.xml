@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ede18e4-f75f-4a35-ad54-c13960d51cbe" name="Default Changelist" comment="" />
+    <list default="true" id="54fa81c8-b808-407b-a42e-3aff654722a4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +18,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1Whxm6uSWEiKtu52m1MBBLEVWkP" />
+  <component name="ProjectId" id="1Wi05m6Y3cCJDJpXJTe4RLkZPC3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
@@ -36,30 +35,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="DrawingEngineDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DrawingEngineDemo" />
-      <module name="IrresponsibleRectangle" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.DrawingEngineDemo" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6ede18e4-f75f-4a35-ad54-c13960d51cbe" name="Default Changelist" comment="" />
-      <created>1579615783797</created>
+      <changelist id="54fa81c8-b808-407b-a42e-3aff654722a4" name="Default Changelist" comment="" />
+      <created>1579616926937</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579615783797</updated>
+      <updated>1579616926937</updated>
     </task>
     <servers />
   </component>
