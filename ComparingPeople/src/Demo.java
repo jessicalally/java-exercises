@@ -29,10 +29,6 @@ public class Demo {
     System.out.println("Smallest by NI: " + findMin(people, new TelephoneComparator()));
     System.out.println("Smallest by surname then forename: " + findMin(people,
         new TwoTieredComparator(new SurnameComparator(), new ForenameComparator())));
-    System.out.println("Smallest by surname, then forename, then NI: "
-        + findMin(people, new TelephoneComparator(new SurnameComparator(),
-        new TwoTieredComparator(new ForenameComparator(), new TelephoneComparator()))));
-
   }
 
 }
