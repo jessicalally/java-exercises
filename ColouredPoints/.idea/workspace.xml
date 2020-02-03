@@ -42,14 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSuite">
-    <configuration name="TestSuiteRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestSuiteRunner" />
-      <module name="ColouredPoints" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestSuite.unEqualPoints2">
     <configuration name="TestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ColouredPoints" />
       <option name="PACKAGE_NAME" value="" />
@@ -59,10 +52,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestSuite.equalColouredPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ColouredPoints" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSuite" />
+      <option name="METHOD_NAME" value="equalColouredPoints" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuite.equalPoints2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ColouredPoints" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSuite" />
+      <option name="METHOD_NAME" value="equalPoints2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuite.unEqualColouredPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ColouredPoints" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSuite" />
+      <option name="METHOD_NAME" value="unEqualColouredPoints" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSuite.unEqualPoints2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ColouredPoints" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestSuite" />
+      <option name="METHOD_NAME" value="unEqualPoints2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSuite.unEqualPoints2" />
+        <item itemvalue="JUnit.TestSuite.equalPoints2" />
+        <item itemvalue="JUnit.TestSuite.unEqualColouredPoints" />
+        <item itemvalue="JUnit.TestSuite.equalColouredPoints" />
         <item itemvalue="JUnit.TestSuite" />
-        <item itemvalue="Application.TestSuiteRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +120,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

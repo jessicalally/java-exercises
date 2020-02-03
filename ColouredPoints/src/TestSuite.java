@@ -1,10 +1,44 @@
 import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
 public class TestSuite {
 
   Colour black = new Colour(0,0,0);
+  Colour white = new Colour(255,255,255);
+
+  @Test
+  public void equalPoints(){
+    assertTrue(new Point(0,1,2).equals(new Point(0,1,2)));
+  }
+
+  @Test
+  public void unEqualPoints(){
+    assertFalse(new Point(0,1,2).equals(new Point(0,1,1)));
+  }
+
+  @Test
+  public void equalColouredPoints(){
+    assertTrue(new ColouredPoint(0,1,2, black).equals(new ColouredPoint(0,1,2, black)));
+  }
+
+  @Test
+  public void unEqualColouredPoints(){
+    assertFalse(new ColouredPoint(0,1,2, black).equals(new ColouredPoint(0,1,2, white)));
+  }
+
+  @Test
+  public void equalPoints2(){
+    assertTrue(new Point(0,1,2).equals(new ColouredPoint(0,1,2, black)));
+  }
+
+  @Test
+  public void unEqualPoints2(){
+    assertFalse(new ColouredPoint(0,1,2, black).equals(new Point (0,1,2)));
+  }
+
 
   @Test
   public void pointGetX() {

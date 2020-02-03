@@ -15,4 +15,13 @@ public class ColouredPoint extends Point {
   public String toString() {
     return "(" + super.toString() + ", " + colour + ")";
   }
+
+  @Override
+  public boolean equals(Object other){
+    if (other instanceof ColouredPoint){
+      ColouredPoint otherPoint = (ColouredPoint) other;
+      return this.getX() == otherPoint.getX() && this.getY() == otherPoint.getY() && this.getZ() == otherPoint.getZ() && this.getColour() == otherPoint.getColour();
+    }
+    return false;
+  }
 }
