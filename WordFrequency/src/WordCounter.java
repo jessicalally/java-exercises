@@ -45,17 +45,8 @@ public class WordCounter implements Runnable {
     Map<String, Integer> word2count2 = new HashMap<>();
     WordCounter wc = new WordCounter(text, 0, text.length, word2count2);
     Thread t = new Thread(wc);
-    Thread u = new Thread(wc);
 
-    t.start();
-    u.start();
-
-    try {
-      t.join();
-      u.join();
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }
+    t.run();
 
     System.out.println(word2count2);
     System.out.println(word2count.equals(word2count2));
@@ -74,17 +65,12 @@ public class WordCounter implements Runnable {
 
   @Override
   public void run() {
-    lock.lock();
-    try {
-      IntStream.range(indexFrom, indexTo).forEach(i -> {
-        String word = text[i];
-        if (sharedCounters.containsKey(word)) {
-          int previousCount = sharedCounters.get(word);
-          sharedCounters.put(word, previousCount + 1);
-        }
-      });
-    } finally {
-      lock.unlock();
-    }
+    IntStream.range(indexFrom, indexTo).forEach(i -> {
+      String word = text[i];
+      if (sharedCounters.containsKey(word)) {
+        int previousCount = sharedCounters.get(word);
+        sharedCounters.put(word, previousCount + 1);
+      }
+    });
   }
 }
