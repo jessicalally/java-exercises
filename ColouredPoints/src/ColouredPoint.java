@@ -7,7 +7,7 @@ public class ColouredPoint extends Point {
     this.colour = colour;
   }
 
-  public Colour getColour(){
+  public Colour getColour() {
     return this.colour;
   }
 
@@ -17,10 +17,14 @@ public class ColouredPoint extends Point {
   }
 
   @Override
-  public boolean equals(Object other){
-    if (other instanceof ColouredPoint){
+  public boolean equals(Object other) {
+    if (other instanceof ColouredPoint) {
       ColouredPoint otherPoint = (ColouredPoint) other;
-      return this.getX() == otherPoint.getX() && this.getY() == otherPoint.getY() && this.getZ() == otherPoint.getZ() && this.getColour() == otherPoint.getColour();
+      boolean xEqual = this.getX() == otherPoint.getX();
+      boolean yEqual = this.getY() == otherPoint.getY();
+      boolean zEqual = this.getZ() == otherPoint.getZ();
+      boolean coloursEqual = this.getColour() == otherPoint.getColour();
+      return xEqual && yEqual && zEqual && coloursEqual;
     }
     return false;
   }

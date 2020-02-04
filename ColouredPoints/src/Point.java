@@ -45,9 +45,10 @@ public class Point {
 
   @Override
   public boolean equals(Object other){
-    if (other instanceof Point){
+    if (other instanceof Point) {
       Point otherPoint = (Point) other;
-      return this.getX() == otherPoint.getX() && this.getY() == otherPoint.getY() && this.getZ() == otherPoint.getZ();
+      return this.getX() == otherPoint.getX() && this.getY() == otherPoint.getY()
+          && this.getZ() == otherPoint.getZ();
     }
     return false;
   }
