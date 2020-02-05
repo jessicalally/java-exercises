@@ -44,9 +44,24 @@ public class WordCounter implements Runnable {
     // Now count in parallel. The map you compute should be equal to word2count (use method equals)
     Map<String, Integer> word2count2 = new HashMap<>();
     WordCounter wc = new WordCounter(text, 0, text.length, word2count2);
-    Thread t = new Thread(wc);
 
-    t.run();
+    List<Thread> threads = new ArrayList<>();
+    IntStream.range(0, numberOfThreads)
+        .sequential()
+        .forEach(
+            i -> {
+              Thread t = new Thread(wc);
+              threads.add(t);
+              t.start();
+            });
+
+    threads.forEach(
+        v -> {
+          try {
+            v.join();
+          } catch (InterruptedException e) {
+          }
+        });
 
     System.out.println(word2count2);
     System.out.println(word2count.equals(word2count2));
@@ -65,12 +80,16 @@ public class WordCounter implements Runnable {
 
   @Override
   public void run() {
+    lock.lock();
     IntStream.range(indexFrom, indexTo).forEach(i -> {
       String word = text[i];
       if (sharedCounters.containsKey(word)) {
         int previousCount = sharedCounters.get(word);
         sharedCounters.put(word, previousCount + 1);
+      } else {
+        sharedCounters.put(word, 0);
       }
     });
+    lock.unlock();
   }
 }
