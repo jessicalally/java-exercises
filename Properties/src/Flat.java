@@ -1,3 +1,3 @@
-public class Flat implements Property {
+public class Flat extends Property {
 
 }

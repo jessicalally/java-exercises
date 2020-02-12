@@ -1,3 +1,3 @@
-public abstract class House implements Property  {
+public abstract class House extends Property  {
 
 }
