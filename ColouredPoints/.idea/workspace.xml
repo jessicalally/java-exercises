@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b5228dc-c827-4913-8af1-578f5cfa6c96" name="Default Changelist" comment="" />
+    <list default="true" id="7b5228dc-c827-4913-8af1-578f5cfa6c96" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ColouredPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColouredPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +46,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestSuite.unEqualPoints2">
-    <configuration name="TestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ColouredPoints" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestSuite" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestSuite.unEqualPoints2" />
         <item itemvalue="JUnit.TestSuite.equalPoints2" />
         <item itemvalue="JUnit.TestSuite.unEqualColouredPoints" />
         <item itemvalue="JUnit.TestSuite.equalColouredPoints" />
-        <item itemvalue="JUnit.TestSuite" />
       </list>
     </recent_temporary>
   </component>

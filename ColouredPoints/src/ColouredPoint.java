@@ -28,4 +28,9 @@ public class ColouredPoint extends Point {
     }
     return false;
   }
+
+  @Override
+  public int hashCode(){
+    return super.hashCode() ^ colour.hashCode();
+  }
 }

@@ -52,4 +52,9 @@ public class Point {
     }
     return false;
   }
+
+  @Override
+  public int hashCode(){
+    return (int) Math.round(37 * (37 * y + x) + z);
+  }
 }
