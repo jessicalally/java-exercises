@@ -3,12 +3,11 @@ import java.util.Set;
 
 public class GroupEmailAddress extends EmailAddress {
 
-  private String identifier;
   private Set<EmailAddress> members;
 
   public GroupEmailAddress(String identifier){
-    this.identifier = identifier;
-    this.members = new HashSet<>();
+    super(identifier);
+    members = new HashSet<>();
   }
 
   public void addMember(EmailAddress email){
@@ -16,25 +15,14 @@ public class GroupEmailAddress extends EmailAddress {
   }
 
   @Override
-  public String getIdentifier() {
-    return this.identifier;
-  }
-
-  @Override
-  public boolean equals(EmailAddress other) {
-    return this.getIdentifier().equals(other.getIdentifier());
-  }
-
-  @Override
-  public int hashCode() {
-    return identifier.hashCode();
-  }
-
-  @Override
-  public Set<EmailAddress> getTargets() {
+  protected Set<EmailAddress> getTargets(Set<EmailAddress> alreadySeen) {
     Set<EmailAddress> addresses = new HashSet<>();
+    if (alreadySeen.contains(this)){
+      return addresses;
+    }
+    alreadySeen.add(this);
     for (EmailAddress member : members){
-      addresses.addAll(member.getTargets());
+      addresses.addAll(member.getTargets(alreadySeen));
     }
     return addresses;
   }

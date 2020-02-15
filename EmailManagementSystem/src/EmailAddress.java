@@ -2,12 +2,32 @@ import java.util.Set;
 
 public abstract class EmailAddress {
 
-  public abstract String getIdentifier();
+  private String identifier;
 
-  public abstract boolean equals(EmailAddress other);
+  public EmailAddress(String identifier){
+    this.identifier = identifier;
+  }
 
-  public abstract int hashCode();
+  public String getIdentifier(){
+    return identifier;
+  }
 
-  public abstract Set<EmailAddress> getTargets();
+  @Override
+  public String toString(){
+    return identifier;
+  }
+
+  @Override
+  public boolean equals(Object other){
+    return other instanceof EmailAddress
+        && ((EmailAddress) other).identifier.equals(identifier);
+  }
+
+  @Override
+  public int hashCode(){
+    return identifier.hashCode();
+  }
+
+  protected abstract Set<EmailAddress> getTargets(Set<EmailAddress> alreadySeen);
 
 }
