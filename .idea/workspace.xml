@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23ee5d4c-c4cb-47e1-b767-e9a19b41f35d" name="Default Changelist" comment="" />
+    <list default="true" id="23ee5d4c-c4cb-47e1-b767-e9a19b41f35d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/Ellipse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shapes/src/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shapes/src/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Practice-Problems/Fighter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Practice-Problems/GameEngine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Practice-Problems/LuckyFighter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Practice-Problems/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java-Practice-Problems/Reverse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java-Practice-Problems/Reverse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reverse.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Reverse">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java-Practice-Problems" />
@@ -53,6 +64,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Reverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Reverse" />
+      <module name="Java-Practice-Problems" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WordCount" />
       <module name="Java-Practice-Problems" />
@@ -62,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Reverse" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.WordCount" />
         <item itemvalue="Application.PigLatin" />

@@ -10,7 +10,7 @@ public class Reverse {
     Deque<String> text = new ArrayDeque<>();
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String line = br.readLine();
-    while (line != null) {
+    while (!line.equals("q")) {
       text.push(line);
       line = br.readLine();
     }

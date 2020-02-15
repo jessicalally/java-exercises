@@ -22,4 +22,14 @@ public class Ellipse extends Shape {
   protected void changeHeight(double h) {
     this.semimajor = h;
   }
+
+  @Override
+  protected boolean isCircle() {
+    return semiminor == semimajor;
+  }
+
+  @Override
+  protected boolean isSquare() {
+    return false;
+  }
 }

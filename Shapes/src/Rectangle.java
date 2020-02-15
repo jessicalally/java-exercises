@@ -23,5 +23,15 @@ public class Rectangle extends Shape {
     this.height = h;
   }
 
+  @Override
+  protected boolean isCircle() {
+    return false;
+  }
+
+  @Override
+  protected boolean isSquare() {
+    return width == height;
+  }
+
 
 }
