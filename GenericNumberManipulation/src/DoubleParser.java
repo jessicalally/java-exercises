@@ -1,4 +1,4 @@
-public class DoubleParser implements NumberParser {
+public class DoubleParser implements NumberParser<Double> {
 
   @Override
   public Double parseNumber(String s) {
