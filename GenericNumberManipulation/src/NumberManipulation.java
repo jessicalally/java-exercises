@@ -17,12 +17,24 @@ public class NumberManipulation {
     return numbers;
   }
 
+  public static <T extends Number> T addNumbers(Set<T> numbers, NumberAdder<T> adder){
+    T result = adder.zero();
+    for (T number : numbers){
+      result = adder.add(result, number);
+    }
+
+    return result;
+  }
+
   public static void main(String[] args) throws IOException {
     Set<Integer> ints = readNumbers(5, new IntegerParser());
     Set<Double> doubles = readNumbers(5, new DoubleParser());
 
     System.out.println(ints);
     System.out.println(doubles);
+
+    System.out.println(addNumbers(ints, new IntegerAdder()));
+    System.out.println(addNumbers(doubles, new DoubleAdder()));
   }
 
 }
