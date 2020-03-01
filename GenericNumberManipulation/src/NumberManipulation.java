@@ -26,6 +26,22 @@ public class NumberManipulation {
     return result;
   }
 
+  public static <T extends Number> Set<Double> displayAsDoubles(Set<T> numbers){
+    Set<Double> doubles = new HashSet<>();
+    for (T number : numbers){
+      doubles.add(number.doubleValue());
+    }
+    return doubles;
+  }
+
+  public static <T extends Number> Set<Integer> displayAsInts(Set<T> numbers){
+    Set<Integer> ints = new HashSet<>();
+    for (T number : numbers){
+      ints.add(number.intValue());
+    }
+    return ints;
+  }
+
   public static void main(String[] args) throws IOException {
     Set<Integer> ints = readNumbers(5, new IntegerParser());
     Set<Double> doubles = readNumbers(5, new DoubleParser());
@@ -35,6 +51,9 @@ public class NumberManipulation {
 
     System.out.println(addNumbers(ints, new IntegerAdder()));
     System.out.println(addNumbers(doubles, new DoubleAdder()));
+
+    System.out.println(displayAsInts(doubles));
+    System.out.println(displayAsDoubles(ints));
   }
 
 }
